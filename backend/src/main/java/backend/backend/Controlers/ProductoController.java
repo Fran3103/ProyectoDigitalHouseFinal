@@ -28,6 +28,7 @@ import backend.backend.Repositories.ImagenesRepositories;
 
 @RestController
 @RequestMapping("/productos")
+@CrossOrigin(origins = "*")
 public class ProductoController {
 
     @Autowired
