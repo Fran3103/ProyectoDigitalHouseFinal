@@ -20,8 +20,8 @@ public class Producto {
     private String titulo;
     private double precio;
     private String categoria;
-    private String marca;
-    private String color;
+    private String ciudad;
+    private String pais;
     private String descripcion;
 
 
@@ -54,17 +54,17 @@ public class Producto {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-    public String getMarca() {
-        return marca;
+    public String getCiudad() {
+        return ciudad;
     }
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
-    public String getColor() {
-        return color;
+    public String getPais() {
+        return pais;
     }
-    public void setColor(String color) {
-        this.color = color;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
     public String getDescripcion() {
         return descripcion;

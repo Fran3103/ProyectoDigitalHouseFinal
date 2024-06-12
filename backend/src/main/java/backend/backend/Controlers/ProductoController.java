@@ -60,8 +60,8 @@ public class ProductoController {
             @RequestParam("files") MultipartFile[] files,
             @RequestParam("titulo") String titulo,
             @RequestParam("precio") Double precio,
-            @RequestParam("marca") String marca,
-            @RequestParam("color") String color,
+            @RequestParam("pais") String pais,
+            @RequestParam("ciudad") String ciudad,
             @RequestParam("categoria") String categoria,
             @RequestParam("descripcion") String descripcion) {
  
@@ -78,8 +78,8 @@ public class ProductoController {
         Producto producto = new Producto();
         producto.setTitulo(titulo);
         producto.setPrecio(precio);
-        producto.setMarca(marca);
-        producto.setColor(color);
+        producto.setPais(pais);
+        producto.setCiudad(ciudad);
         producto.setCategoria(categoria);
         producto.setDescripcion(descripcion);
         productoRepository.save(producto);
@@ -135,8 +135,8 @@ public class ProductoController {
         producto.setTitulo(detalleProducto.getTitulo());
         producto.setPrecio(detalleProducto.getPrecio());
         producto.setCategoria(detalleProducto.getCategoria());
-        producto.setColor(detalleProducto.getColor());
-        producto.setMarca(detalleProducto.getMarca());
+        producto.setPais(detalleProducto.getPais());
+        producto.setCiudad(detalleProducto.getCiudad());
         producto.setDescripcion(detalleProducto.getDescripcion());
 
         return productoRepository.save(producto);
